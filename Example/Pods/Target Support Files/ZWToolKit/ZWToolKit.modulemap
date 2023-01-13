@@ -1,0 +1,6 @@
+framework module ZWToolKit {
+  umbrella header "ZWToolKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

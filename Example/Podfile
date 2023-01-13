@@ -1,0 +1,20 @@
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'ZWToolKit_Example' do
+  pod 'ZWToolKit/ZWProgressHUD', :path => '../'
+
+  
+  post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+      #解决Xcode14中Pod工程中的Bundle target签名报错
+      config.build_settings['EXPANDED_CODE_SIGN_IDENTITY'] = ""
+      config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
+      config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
+    end
+  end
+  
+end

@@ -1,0 +1,23 @@
+PODS:
+  - MBProgressHUD (1.2.0)
+  - ZWToolKit/ZWProgressHUD (0.1.0):
+    - MBProgressHUD
+
+DEPENDENCIES:
+  - ZWToolKit/ZWProgressHUD (from `../`)
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - MBProgressHUD
+
+EXTERNAL SOURCES:
+  ZWToolKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  ZWToolKit: 9df7ba152e1dd12ea5cce6c40c8a52d6fdbe55f7
+
+PODFILE CHECKSUM: 21f4a857dd0a074f4eae9ef6fb58957fd56bb77c
+
+COCOAPODS: 1.11.3
