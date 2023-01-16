@@ -5,7 +5,7 @@ use_frameworks!
 platform :ios, '10.0'
 
 target 'ZWToolKit_Example' do
-  pod 'ZWToolKit/ZWProgressHUD', :path => '../'
+  pod 'ZWToolKit', :path => '../'
 
   post_install do |installer|
     installer.pods_project.build_configurations.each do |config|

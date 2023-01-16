@@ -9,118 +9,132 @@
 /* Begin PBXBuildFile section */
 		0097064E7F7D3F413161738CC5C25EEC /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C8787AEF5F8F4CCDD782A64D078427 /* MBProgressHUD.m */; };
 		0AA33EBB857A5205F87C09CCB99EAC74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
-		124CB0B6443EF3EC707322949BE0EDDD /* ZWToolKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6477339B856DEEF38E34641A1A6E4BEE /* ZWToolKit-dummy.m */; };
-		14EEF25CD71570D44B2501CF8F81F42A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
-		4B978E3D5688D31ECE47DE7D139D64AC /* ZWToolKit-ZWToolKit in Resources */ = {isa = PBXBuildFile; fileRef = D1FB85E50E811B425CD2E9EA8EF8B7A3 /* ZWToolKit-ZWToolKit */; };
+		0C5335D8F2B12AA67C096B9037CB0EE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
+		1D2420F56265BAB4185940F0AE9BB080 /* ZWToolKit-ZWToolKit in Resources */ = {isa = PBXBuildFile; fileRef = D1FB85E50E811B425CD2E9EA8EF8B7A3 /* ZWToolKit-ZWToolKit */; };
+		2D43A62E77D9CFE74D2E2E40A3376DC4 /* UIColor+Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 680F8C76BB6E8F7697D0A5FB282ACA19 /* UIColor+Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		343D10F2DB99D5B999380F2D3F08B83A /* AppMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = B990395F39A63916038C55B23BC6531D /* AppMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4553616AA965FEE616BE97A162D811FD /* ZWProgressHUD.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5BC17B40D6EF93E7E740BBF6A5570CB /* ZWProgressHUD.xcassets */; };
+		47A46EA5BF0A5C282BEF1396B29BB78E /* ZWProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BA48CE21048AC210F831A1F15C94F4F5 /* ZWProgressHUD.m */; };
 		58C91B4AB36E6B16421106CA634C58EF /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF19F2C17178E7145FE1DBF7DE5B7D /* MBProgressHUD-dummy.m */; };
 		5BAC1EF86D0E57E44E404B2796993561 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F31C808188F0318B8D5A16F065156F9 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C9FC95425DECD4ADF39B0D9FAAD0CB7 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A36ADD5F8F293E21492ED83DAA0951 /* NSString+Category.m */; };
 		67E941CADB3CDDEEDF8CE4EE4A4A05BB /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = FC7C54894F0D982511B53767CE31EBF1 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68109209F0474B83CD0420B03C8F4115 /* ZWProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 6229DEA6DEA476D155CC4EECCB8456A8 /* ZWProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75BBFB74A9F1D97298F262D3A2C84C50 /* ZWLinkView.m in Sources */ = {isa = PBXBuildFile; fileRef = F305833F56E0E6193D3B2614DBCC44DD /* ZWLinkView.m */; };
+		79422BF3A0A50E8EE7DAAC6E3E17A522 /* NSString+Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 558213D7BBBBB5F7BAF7739183D9FA2E /* NSString+Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DFD9C8A166E301A7604941162972423 /* Pods-ZWToolKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B6D923F2F03D8CD949CB82D5A86B8B /* Pods-ZWToolKit_Example-dummy.m */; };
-		9301B21A4E0A5366F5A0FFE9A707189C /* ZWProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2AAF7B54F6DC83DDA62227960BE41 /* ZWProgressHUD.m */; };
+		8E5D71DA96E174BAA3D05AA68F2FDD36 /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = E100241EEDB7A80EA5DF9DD01B7AC012 /* UIColor+Category.m */; };
 		AFAC1D4EBD53A048346210536741DF13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABB98090B02C131F86931CB9BE54B7A /* CoreGraphics.framework */; };
 		B52177FF72FDAC3EDB7195DE98F5501E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51AB40693B18F443F75126966ED13E47 /* QuartzCore.framework */; };
+		B806FF25A7BB389200538AAF62CAE61C /* ZWToolKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 969279C5D0E945ED5B5FA3440436E95D /* ZWToolKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C361E0F582E1C6210E8A59E53B672916 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
-		CC1604796A247331FA7AABECD26CAB7A /* ZWToolKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4CCAC3BB87D2914B58E7F40929B2896 /* ZWToolKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC360C3C7987F88BCA92ACC1DF9FBFE5 /* Pods-ZWToolKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD8B9F14DEE712A4AB64D49491858275 /* Pods-ZWToolKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3EAF6194DFA2F930801BBBB9EE56055 /* ZWProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 04A13A5F87D912F7E4DF8AE63C1444BC /* ZWProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC27CA6527A42618C409C1B86A9D7F40 /* ZWProgressHUD.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8A791BF1C436E778D47214DA05FFDE /* ZWProgressHUD.xcassets */; };
+		E04114E3C823869FECE0EBF660F8D4AB /* ZWLinkView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BFA06CEFF24DE18EACF85D8AFB4B612 /* ZWLinkView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDB9D6E8E2F42898183F81068AC9DC96 /* ZWToolKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A67C7483BB8994D35258352FB65A3 /* ZWToolKit-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		101B75FAED46BD168AB71091F212CEEE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
-			remoteInfo = MBProgressHUD;
-		};
-		674A3A573B23BB5CFF90D8B3C535CBBF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
-			remoteInfo = MBProgressHUD;
-		};
-		DBD9A1DFDB554B2C8A21D7A99EA7C47E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 669ACF0C546A4082FB054373CE066FDC;
-			remoteInfo = "ZWToolKit-ZWToolKit";
-		};
-		EE4F19F1848CC490EC1C5353ECA3901B /* PBXContainerItemProxy */ = {
+		16C557FC8A1DFCDB1AD510720BF992A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 36E0FD216D4478E0A0AE1F7DE7D4B0E2;
 			remoteInfo = ZWToolKit;
 		};
+		22C043E019D35B45162A11FDA71E2D4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
+			remoteInfo = MBProgressHUD;
+		};
+		2793F13B60733ED7993E1BA3C5441E6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 669ACF0C546A4082FB054373CE066FDC;
+			remoteInfo = "ZWToolKit-ZWToolKit";
+		};
+		3A3ED6731DD4A6907D8EA7326730F0D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
+			remoteInfo = MBProgressHUD;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		021BA0BE48CDAE229F49D13385EC142D /* ZWToolKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZWToolKit-prefix.pch"; sourceTree = "<group>"; };
 		02DE747229E399E2392D03F0159500CF /* ZWToolKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZWToolKit; path = ZWToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		04A13A5F87D912F7E4DF8AE63C1444BC /* ZWProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZWProgressHUD.h; path = ZWToolKit/Classes/ZWProgressHUD/ZWProgressHUD.h; sourceTree = "<group>"; };
 		0A4FD382FD72EB9290184A3A40D7BE96 /* Pods-ZWToolKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZWToolKit_Example.modulemap"; sourceTree = "<group>"; };
+		0F7A67C7483BB8994D35258352FB65A3 /* ZWToolKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZWToolKit-dummy.m"; sourceTree = "<group>"; };
 		14EF906785ECC6E01A8C84DA5C08EA07 /* Pods-ZWToolKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZWToolKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		18DD1BA00D2FC805F7FA5D7112FA7C9A /* ZWToolKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZWToolKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1CD0813CF52D39A063F39939E4A92C20 /* ZWToolKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZWToolKit-Info.plist"; sourceTree = "<group>"; };
-		1DB2AAF7B54F6DC83DDA62227960BE41 /* ZWProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZWProgressHUD.m; path = ZWToolKit/Classes/ZWProgressHUD/ZWProgressHUD.m; sourceTree = "<group>"; };
+		1BFA06CEFF24DE18EACF85D8AFB4B612 /* ZWLinkView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWLinkView.h; sourceTree = "<group>"; };
 		205447B5D6A1FB8A883FD8492D97ED9E /* Pods-ZWToolKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZWToolKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		3A8A791BF1C436E778D47214DA05FFDE /* ZWProgressHUD.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = ZWProgressHUD.xcassets; path = ZWToolKit/Assets/ZWProgressHUD.xcassets; sourceTree = "<group>"; };
 		4ECF19F2C17178E7145FE1DBF7DE5B7D /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		51AB40693B18F443F75126966ED13E47 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		53025FD44EEDEB9CEAE854B0AE31CB82 /* MBProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBProgressHUD-Info.plist"; sourceTree = "<group>"; };
-		596C5C7FB0874EC194F1557585AD11C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		558213D7BBBBB5F7BAF7739183D9FA2E /* NSString+Category.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		56A36ADD5F8F293E21492ED83DAA0951 /* NSString+Category.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 		5E221A5AAC45302AF396416395265FFD /* MBProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
 		5F31C808188F0318B8D5A16F065156F9 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		6477339B856DEEF38E34641A1A6E4BEE /* ZWToolKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZWToolKit-dummy.m"; sourceTree = "<group>"; };
+		6229DEA6DEA476D155CC4EECCB8456A8 /* ZWProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWProgressHUD.h; sourceTree = "<group>"; };
 		67C8787AEF5F8F4CCDD782A64D078427 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		680F8C76BB6E8F7697D0A5FB282ACA19 /* UIColor+Category.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
 		6CEB62E30C5BAB8D4A2A435A4D4DA33A /* MBProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.release.xcconfig; sourceTree = "<group>"; };
+		6D00F4F40ABA5EF81FF3599B10BC96CA /* ZWToolKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZWToolKit.debug.xcconfig; sourceTree = "<group>"; };
+		7022390A900B71AC7A12F0F5813202AC /* ZWToolKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZWToolKit.modulemap; sourceTree = "<group>"; };
 		70B6D923F2F03D8CD949CB82D5A86B8B /* Pods-ZWToolKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZWToolKit_Example-dummy.m"; sourceTree = "<group>"; };
 		71586C258C9A4BA21A453C698866EBC7 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		74B78617EB1ADD9F85CD329FCE2D62A9 /* Pods-ZWToolKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZWToolKit_Example"; path = Pods_ZWToolKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8579CBB4B92B7985BF2A7FAAF441E1DF /* Pods-ZWToolKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZWToolKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8853A47FD64ED2392047B7BA0CC109D2 /* ZWToolKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZWToolKit-Info.plist"; sourceTree = "<group>"; };
+		88C121B73BC3203E15462831050091D6 /* ResourceBundle-ZWToolKit-ZWToolKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ZWToolKit-ZWToolKit-Info.plist"; sourceTree = "<group>"; };
 		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98EE8DFE3144E843E09FE1EF8462A72A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		969279C5D0E945ED5B5FA3440436E95D /* ZWToolKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZWToolKit-umbrella.h"; sourceTree = "<group>"; };
+		9887899C100AF9F69B177D8DF3ED75A1 /* ZWToolKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZWToolKit.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3C90B9EC3A281AF3C0CD9A6B51C960C /* ZWToolKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZWToolKit.release.xcconfig; sourceTree = "<group>"; };
 		AD8B9F14DEE712A4AB64D49491858275 /* Pods-ZWToolKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZWToolKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		B990395F39A63916038C55B23BC6531D /* AppMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
+		BA48CE21048AC210F831A1F15C94F4F5 /* ZWProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWProgressHUD.m; sourceTree = "<group>"; };
 		CABB98090B02C131F86931CB9BE54B7A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CE1B60A597C2EB92EC62DDA27F3CE69A /* Pods-ZWToolKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZWToolKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D1FB85E50E811B425CD2E9EA8EF8B7A3 /* ZWToolKit-ZWToolKit */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ZWToolKit-ZWToolKit"; path = ZWToolKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2EFE09BFBC866E1AED2415DD6654733 /* ZWToolKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZWToolKit.modulemap; sourceTree = "<group>"; };
+		D825E799543CFB542C9B871170DC1905 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E100241EEDB7A80EA5DF9DD01B7AC012 /* UIColor+Category.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
 		E7942CF0CE22AB2B02E6E8951F162764 /* Pods-ZWToolKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZWToolKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EAEBA56886ECE5F1F00F343E58AF6C5B /* ZWToolKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZWToolKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F1A0E508679ED342B4AEDF1866C001EB /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
-		F2405059304952B1F87CEB9A80A57481 /* ZWToolKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZWToolKit-prefix.pch"; sourceTree = "<group>"; };
-		F4BEC9840F998C87CF671BFC25948899 /* ResourceBundle-ZWToolKit-ZWToolKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ZWToolKit-ZWToolKit-Info.plist"; sourceTree = "<group>"; };
-		F4CCAC3BB87D2914B58E7F40929B2896 /* ZWToolKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZWToolKit-umbrella.h"; sourceTree = "<group>"; };
-		F6C302AEC993563CAD8E83B438F65215 /* ZWToolKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZWToolKit.debug.xcconfig; sourceTree = "<group>"; };
+		F305833F56E0E6193D3B2614DBCC44DD /* ZWLinkView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWLinkView.m; sourceTree = "<group>"; };
+		F5BC17B40D6EF93E7E740BBF6A5570CB /* ZWProgressHUD.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = ZWProgressHUD.xcassets; path = ../../Assets/ZWProgressHUD.xcassets; sourceTree = "<group>"; };
+		F956E999EADA1EC85B26957CC0066AE2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		FC7C54894F0D982511B53767CE31EBF1 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		FF0179A4B3352EAF3F3A3E0E32B97420 /* Pods-ZWToolKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZWToolKit_Example-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2D533054FA2212B287CB06CD9A9970A4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14EEF25CD71570D44B2501CF8F81F42A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D8D2D4699C219B0FA6BF7129CF0839D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3E58A587B26B22EE466AF7F49076A74E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C361E0F582E1C6210E8A59E53B672916 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77EAA262B8C01DA439D8B297802D180A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10E2AA0206AAEF82329A37539106205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C5335D8F2B12AA67C096B9037CB0EE0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +159,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		062B63F692D7E4A8D5ACDBC5D56AA88D /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				558213D7BBBBB5F7BAF7739183D9FA2E /* NSString+Category.h */,
+				56A36ADD5F8F293E21492ED83DAA0951 /* NSString+Category.m */,
+			);
+			name = NSString;
+			path = NSString;
+			sourceTree = "<group>";
+		};
 		14913695578A5FE96631F31DDC4FE8A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,14 +188,47 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		33EAC99B3B2251B6A53F80013233CA2D /* ZWProgressHUD */ = {
+		25AFEA8D70F8D6915B0865D3518C523D /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				04A13A5F87D912F7E4DF8AE63C1444BC /* ZWProgressHUD.h */,
-				1DB2AAF7B54F6DC83DDA62227960BE41 /* ZWProgressHUD.m */,
-				3A8A791BF1C436E778D47214DA05FFDE /* ZWProgressHUD.xcassets */,
+				680F8C76BB6E8F7697D0A5FB282ACA19 /* UIColor+Category.h */,
+				E100241EEDB7A80EA5DF9DD01B7AC012 /* UIColor+Category.m */,
+			);
+			name = UIColor;
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		29DB7BBEAB51D8C88B967104F5469C58 /* ZWToolKit */ = {
+			isa = PBXGroup;
+			children = (
+				73844B55266E3F28175647981A8E775E /* Extensions */,
+				7329368291BE48F6EC49B2320966CE17 /* Pod */,
+				83679D5600AB2AA615912585DB57C61E /* Support Files */,
+				A060167582FE29FC83DF086A042BB935 /* ZWCommon */,
+				DA30997FC990256EF338AF8C49D2FCC8 /* ZWLinkView */,
+				3B1247719676C2D5DF2CF7A08F244D2A /* ZWProgressHUD */,
+			);
+			name = ZWToolKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2F82DFD23D1F56ED2EB48C66E7C428D1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29DB7BBEAB51D8C88B967104F5469C58 /* ZWToolKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3B1247719676C2D5DF2CF7A08F244D2A /* ZWProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6229DEA6DEA476D155CC4EECCB8456A8 /* ZWProgressHUD.h */,
+				BA48CE21048AC210F831A1F15C94F4F5 /* ZWProgressHUD.m */,
+				F5BC17B40D6EF93E7E740BBF6A5570CB /* ZWProgressHUD.xcassets */,
 			);
 			name = ZWProgressHUD;
+			path = ZWToolKit/Classes/ZWProgressHUD;
 			sourceTree = "<group>";
 		};
 		3F242479102E24C5847AB040CB8095A8 /* Pods */ = {
@@ -192,6 +249,26 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		7329368291BE48F6EC49B2320966CE17 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D825E799543CFB542C9B871170DC1905 /* LICENSE */,
+				F956E999EADA1EC85B26957CC0066AE2 /* README.md */,
+				EAEBA56886ECE5F1F00F343E58AF6C5B /* ZWToolKit.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		73844B55266E3F28175647981A8E775E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				062B63F692D7E4A8D5ACDBC5D56AA88D /* NSString */,
+				25AFEA8D70F8D6915B0865D3518C523D /* UIColor */,
+			);
+			name = Extensions;
+			path = ZWToolKit/Classes/Extensions;
+			sourceTree = "<group>";
+		};
 		7DA15A24060A7C02AA2887C73FB2018D /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,25 +280,29 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		8E016508EC44B0A683317EC0C0152FB4 /* Pod */ = {
+		83679D5600AB2AA615912585DB57C61E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				596C5C7FB0874EC194F1557585AD11C5 /* LICENSE */,
-				98EE8DFE3144E843E09FE1EF8462A72A /* README.md */,
-				18DD1BA00D2FC805F7FA5D7112FA7C9A /* ZWToolKit.podspec */,
+				88C121B73BC3203E15462831050091D6 /* ResourceBundle-ZWToolKit-ZWToolKit-Info.plist */,
+				7022390A900B71AC7A12F0F5813202AC /* ZWToolKit.modulemap */,
+				0F7A67C7483BB8994D35258352FB65A3 /* ZWToolKit-dummy.m */,
+				8853A47FD64ED2392047B7BA0CC109D2 /* ZWToolKit-Info.plist */,
+				021BA0BE48CDAE229F49D13385EC142D /* ZWToolKit-prefix.pch */,
+				969279C5D0E945ED5B5FA3440436E95D /* ZWToolKit-umbrella.h */,
+				6D00F4F40ABA5EF81FF3599B10BC96CA /* ZWToolKit.debug.xcconfig */,
+				9887899C100AF9F69B177D8DF3ED75A1 /* ZWToolKit.release.xcconfig */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZWToolKit";
 			sourceTree = "<group>";
 		};
-		B6F4291401A47BAA5D22626AAD3A32C4 /* ZWToolKit */ = {
+		A060167582FE29FC83DF086A042BB935 /* ZWCommon */ = {
 			isa = PBXGroup;
 			children = (
-				8E016508EC44B0A683317EC0C0152FB4 /* Pod */,
-				E0A5E09C8784DFA55499421E123FC057 /* Support Files */,
-				33EAC99B3B2251B6A53F80013233CA2D /* ZWProgressHUD */,
+				B990395F39A63916038C55B23BC6531D /* AppMacro.h */,
 			);
-			name = ZWToolKit;
-			path = ../..;
+			name = ZWCommon;
+			path = ZWToolKit/Classes/ZWCommon;
 			sourceTree = "<group>";
 		};
 		C86A493F744575B77BC85AB9B143DAC2 /* Support Files */ = {
@@ -260,7 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				F1308F7DE9316A30FF4BA7F19866ACAB /* Development Pods */,
+				2F82DFD23D1F56ED2EB48C66E7C428D1 /* Development Pods */,
 				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
 				3F242479102E24C5847AB040CB8095A8 /* Pods */,
 				14913695578A5FE96631F31DDC4FE8A1 /* Products */,
@@ -268,28 +349,14 @@
 			);
 			sourceTree = "<group>";
 		};
-		E0A5E09C8784DFA55499421E123FC057 /* Support Files */ = {
+		DA30997FC990256EF338AF8C49D2FCC8 /* ZWLinkView */ = {
 			isa = PBXGroup;
 			children = (
-				F4BEC9840F998C87CF671BFC25948899 /* ResourceBundle-ZWToolKit-ZWToolKit-Info.plist */,
-				E2EFE09BFBC866E1AED2415DD6654733 /* ZWToolKit.modulemap */,
-				6477339B856DEEF38E34641A1A6E4BEE /* ZWToolKit-dummy.m */,
-				1CD0813CF52D39A063F39939E4A92C20 /* ZWToolKit-Info.plist */,
-				F2405059304952B1F87CEB9A80A57481 /* ZWToolKit-prefix.pch */,
-				F4CCAC3BB87D2914B58E7F40929B2896 /* ZWToolKit-umbrella.h */,
-				F6C302AEC993563CAD8E83B438F65215 /* ZWToolKit.debug.xcconfig */,
-				A3C90B9EC3A281AF3C0CD9A6B51C960C /* ZWToolKit.release.xcconfig */,
+				1BFA06CEFF24DE18EACF85D8AFB4B612 /* ZWLinkView.h */,
+				F305833F56E0E6193D3B2614DBCC44DD /* ZWLinkView.m */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ZWToolKit";
-			sourceTree = "<group>";
-		};
-		F1308F7DE9316A30FF4BA7F19866ACAB /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B6F4291401A47BAA5D22626AAD3A32C4 /* ZWToolKit */,
-			);
-			name = "Development Pods";
+			name = ZWLinkView;
+			path = ZWToolKit/Classes/ZWLinkView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,12 +371,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A37CCE0B0CB2D38D33FBB90751D52F20 /* Headers */ = {
+		784A629EB2A91AEC062DC5F7D7191300 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3EAF6194DFA2F930801BBBB9EE56055 /* ZWProgressHUD.h in Headers */,
-				CC1604796A247331FA7AABECD26CAB7A /* ZWToolKit-umbrella.h in Headers */,
+				343D10F2DB99D5B999380F2D3F08B83A /* AppMacro.h in Headers */,
+				79422BF3A0A50E8EE7DAAC6E3E17A522 /* NSString+Category.h in Headers */,
+				2D43A62E77D9CFE74D2E2E40A3376DC4 /* UIColor+Category.h in Headers */,
+				E04114E3C823869FECE0EBF660F8D4AB /* ZWLinkView.h in Headers */,
+				68109209F0474B83CD0420B03C8F4115 /* ZWProgressHUD.h in Headers */,
+				B806FF25A7BB389200538AAF62CAE61C /* ZWToolKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,18 +397,18 @@
 /* Begin PBXNativeTarget section */
 		36E0FD216D4478E0A0AE1F7DE7D4B0E2 /* ZWToolKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1980CC33E1E8EDCC2B287F400EC4B0DC /* Build configuration list for PBXNativeTarget "ZWToolKit" */;
+			buildConfigurationList = 6F3E719A5BCEC259834376493748F4F6 /* Build configuration list for PBXNativeTarget "ZWToolKit" */;
 			buildPhases = (
-				A37CCE0B0CB2D38D33FBB90751D52F20 /* Headers */,
-				26DCFA8EF37E47FDAE8AD5FE8F8CA02D /* Sources */,
-				2D533054FA2212B287CB06CD9A9970A4 /* Frameworks */,
-				DB82D23A56101381DE8D80ED37C8B9F8 /* Resources */,
+				784A629EB2A91AEC062DC5F7D7191300 /* Headers */,
+				613125EB06CC66749DF1EF7C570AE186 /* Sources */,
+				D10E2AA0206AAEF82329A37539106205 /* Frameworks */,
+				F8666D083D025D128C73C39361B6040A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2F7A79FBBDD6C687DF6873C2DDE50015 /* PBXTargetDependency */,
-				6F70F1C2804E5ADFB7D2E02B62382D0B /* PBXTargetDependency */,
+				8FFE06061D9C073E68E14F769F41DC9E /* PBXTargetDependency */,
+				BFBD901E818474A05420A29694952336 /* PBXTargetDependency */,
 			);
 			name = ZWToolKit;
 			productName = ZWToolKit;
@@ -356,8 +427,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				F29840394075A0E701E4A3A9B3935684 /* PBXTargetDependency */,
-				BF16AA7235EBCA819D838E06B36B8A69 /* PBXTargetDependency */,
+				0B5DA73FDFFD32C47084DF7DF8DF5394 /* PBXTargetDependency */,
+				DF91E345E411FA49C34AFF1364051379 /* PBXTargetDependency */,
 			);
 			name = "Pods-ZWToolKit_Example";
 			productName = Pods_ZWToolKit_Example;
@@ -366,11 +437,11 @@
 		};
 		669ACF0C546A4082FB054373CE066FDC /* ZWToolKit-ZWToolKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 306D5DB28496F2C045B4655A35246D38 /* Build configuration list for PBXNativeTarget "ZWToolKit-ZWToolKit" */;
+			buildConfigurationList = 61BA2C7713DB73DB2666ED94A2F7E8C1 /* Build configuration list for PBXNativeTarget "ZWToolKit-ZWToolKit" */;
 			buildPhases = (
-				63F8591836942C512F238F685427093B /* Sources */,
-				2D8D2D4699C219B0FA6BF7129CF0839D /* Frameworks */,
-				8B42532B55E95BCB34158D869915FDD2 /* Resources */,
+				09FACFB6938D844C138496BB4C2F7D67 /* Sources */,
+				77EAA262B8C01DA439D8B297802D180A /* Frameworks */,
+				A28FED7E0868E09DDFBE33A47520579E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -430,11 +501,11 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8B42532B55E95BCB34158D869915FDD2 /* Resources */ = {
+		A28FED7E0868E09DDFBE33A47520579E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC27CA6527A42618C409C1B86A9D7F40 /* ZWProgressHUD.xcassets in Resources */,
+				4553616AA965FEE616BE97A162D811FD /* ZWProgressHUD.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,23 +523,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB82D23A56101381DE8D80ED37C8B9F8 /* Resources */ = {
+		F8666D083D025D128C73C39361B6040A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B978E3D5688D31ECE47DE7D139D64AC /* ZWToolKit-ZWToolKit in Resources */,
+				1D2420F56265BAB4185940F0AE9BB080 /* ZWToolKit-ZWToolKit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		26DCFA8EF37E47FDAE8AD5FE8F8CA02D /* Sources */ = {
+		09FACFB6938D844C138496BB4C2F7D67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9301B21A4E0A5366F5A0FFE9A707189C /* ZWProgressHUD.m in Sources */,
-				124CB0B6443EF3EC707322949BE0EDDD /* ZWToolKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,10 +549,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63F8591836942C512F238F685427093B /* Sources */ = {
+		613125EB06CC66749DF1EF7C570AE186 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C9FC95425DECD4ADF39B0D9FAAD0CB7 /* NSString+Category.m in Sources */,
+				8E5D71DA96E174BAA3D05AA68F2FDD36 /* UIColor+Category.m in Sources */,
+				75BBFB74A9F1D97298F262D3A2C84C50 /* ZWLinkView.m in Sources */,
+				47A46EA5BF0A5C282BEF1396B29BB78E /* ZWProgressHUD.m in Sources */,
+				FDB9D6E8E2F42898183F81068AC9DC96 /* ZWToolKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,33 +573,65 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2F7A79FBBDD6C687DF6873C2DDE50015 /* PBXTargetDependency */ = {
+		0B5DA73FDFFD32C47084DF7DF8DF5394 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
 			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
-			targetProxy = 674A3A573B23BB5CFF90D8B3C535CBBF /* PBXContainerItemProxy */;
+			targetProxy = 22C043E019D35B45162A11FDA71E2D4A /* PBXContainerItemProxy */;
 		};
-		6F70F1C2804E5ADFB7D2E02B62382D0B /* PBXTargetDependency */ = {
+		8FFE06061D9C073E68E14F769F41DC9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
+			targetProxy = 3A3ED6731DD4A6907D8EA7326730F0D3 /* PBXContainerItemProxy */;
+		};
+		BFBD901E818474A05420A29694952336 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ZWToolKit-ZWToolKit";
 			target = 669ACF0C546A4082FB054373CE066FDC /* ZWToolKit-ZWToolKit */;
-			targetProxy = DBD9A1DFDB554B2C8A21D7A99EA7C47E /* PBXContainerItemProxy */;
+			targetProxy = 2793F13B60733ED7993E1BA3C5441E6B /* PBXContainerItemProxy */;
 		};
-		BF16AA7235EBCA819D838E06B36B8A69 /* PBXTargetDependency */ = {
+		DF91E345E411FA49C34AFF1364051379 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZWToolKit;
 			target = 36E0FD216D4478E0A0AE1F7DE7D4B0E2 /* ZWToolKit */;
-			targetProxy = EE4F19F1848CC490EC1C5353ECA3901B /* PBXContainerItemProxy */;
-		};
-		F29840394075A0E701E4A3A9B3935684 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MBProgressHUD;
-			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
-			targetProxy = 101B75FAED46BD168AB71091F212CEEE /* PBXContainerItemProxy */;
+			targetProxy = 16C557FC8A1DFCDB1AD510720BF992A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		002444AA34E8426E261E4759611B05F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9887899C100AF9F69B177D8DF3ED75A1 /* ZWToolKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZWToolKit/ZWToolKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZWToolKit/ZWToolKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZWToolKit/ZWToolKit.modulemap";
+				PRODUCT_MODULE_NAME = ZWToolKit;
+				PRODUCT_NAME = ZWToolKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2705B82FAD3E374C3BF6B225CAFAFDC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CEB62E30C5BAB8D4A2A435A4D4DA33A /* MBProgressHUD.release.xcconfig */;
@@ -587,34 +693,35 @@
 			};
 			name = Debug;
 		};
-		77FDC1FAD43791FF2578E13004E8C1BE /* Debug */ = {
+		552EA6EFCD37609602AE30937B3E08DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6C302AEC993563CAD8E83B438F65215 /* ZWToolKit.debug.xcconfig */;
+			baseConfigurationReference = 9887899C100AF9F69B177D8DF3ED75A1 /* ZWToolKit.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZWToolKit/ZWToolKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZWToolKit/ZWToolKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZWToolKit";
+				IBSC_MODULE = ZWToolKit;
+				INFOPLIST_FILE = "Target Support Files/ZWToolKit/ResourceBundle-ZWToolKit-ZWToolKit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZWToolKit/ZWToolKit.modulemap";
-				PRODUCT_MODULE_NAME = ZWToolKit;
 				PRODUCT_NAME = ZWToolKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		63C509E0B90E3C0B465DD63F1C38ACCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D00F4F40ABA5EF81FF3599B10BC96CA /* ZWToolKit.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZWToolKit";
+				IBSC_MODULE = ZWToolKit;
+				INFOPLIST_FILE = "Target Support Files/ZWToolKit/ResourceBundle-ZWToolKit-ZWToolKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = ZWToolKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -683,38 +790,6 @@
 			};
 			name = Release;
 		};
-		821E93C5DD8E12EE4725CE13320BED1D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6C302AEC993563CAD8E83B438F65215 /* ZWToolKit.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZWToolKit";
-				IBSC_MODULE = ZWToolKit;
-				INFOPLIST_FILE = "Target Support Files/ZWToolKit/ResourceBundle-ZWToolKit-ZWToolKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = ZWToolKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		A2F6BC15DDFAEA8D9A1809A2E30EA0DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3C90B9EC3A281AF3C0CD9A6B51C960C /* ZWToolKit.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZWToolKit";
-				IBSC_MODULE = ZWToolKit;
-				INFOPLIST_FILE = "Target Support Files/ZWToolKit/ResourceBundle-ZWToolKit-ZWToolKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = ZWToolKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		B95C2A346D7B8CC4068E36EDAA414F82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14EF906785ECC6E01A8C84DA5C08EA07 /* Pods-ZWToolKit_Example.debug.xcconfig */;
@@ -748,9 +823,9 @@
 			};
 			name = Debug;
 		};
-		CF197C7C173164FA35D5917EEAC2D207 /* Release */ = {
+		C86351CD8D138A7A372F25C1B2DDA844 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3C90B9EC3A281AF3C0CD9A6B51C960C /* ZWToolKit.release.xcconfig */;
+			baseConfigurationReference = 6D00F4F40ABA5EF81FF3599B10BC96CA /* ZWToolKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -774,11 +849,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -886,29 +960,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1980CC33E1E8EDCC2B287F400EC4B0DC /* Build configuration list for PBXNativeTarget "ZWToolKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				77FDC1FAD43791FF2578E13004E8C1BE /* Debug */,
-				CF197C7C173164FA35D5917EEAC2D207 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		306D5DB28496F2C045B4655A35246D38 /* Build configuration list for PBXNativeTarget "ZWToolKit-ZWToolKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				821E93C5DD8E12EE4725CE13320BED1D /* Debug */,
-				A2F6BC15DDFAEA8D9A1809A2E30EA0DF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
 				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61BA2C7713DB73DB2666ED94A2F7E8C1 /* Build configuration list for PBXNativeTarget "ZWToolKit-ZWToolKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C509E0B90E3C0B465DD63F1C38ACCE /* Debug */,
+				552EA6EFCD37609602AE30937B3E08DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F3E719A5BCEC259834376493748F4F6 /* Build configuration list for PBXNativeTarget "ZWToolKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86351CD8D138A7A372F25C1B2DDA844 /* Debug */,
+				002444AA34E8426E261E4759611B05F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -42,7 +42,7 @@ TODO: Add long description of the pod here.
   s.subspec 'ZWLinkView' do |cs|
     cs.source_files = [
       'ZWToolKit/Classes/ZWCommon/**/*',
-      'ZWToolKit/Classes/NSString/**/*',
+      'ZWToolKit/Classes/Extensions/NSString/**/*',
       'ZWToolKit/Classes/ZWLinkView/**/*'
     ]
   end
