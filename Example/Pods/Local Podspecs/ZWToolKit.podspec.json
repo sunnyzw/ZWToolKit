@@ -1,6 +1,6 @@
 {
   "name": "ZWToolKit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "常用工具集合库",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/sunnyzw/ZWToolKit",
@@ -13,8 +13,9 @@
   },
   "source": {
     "git": "https://github.com/sunnyzw/ZWToolKit.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
+  "source_files": "ZWToolKit/Classes/**/*",
   "platforms": {
     "ios": "10.0"
   },
@@ -32,6 +33,14 @@
 
         ]
       }
+    },
+    {
+      "name": "ZWLinkView",
+      "source_files": [
+        "ZWToolKit/Classes/ZWCommon/**/*",
+        "ZWToolKit/Classes/NSString/**/*",
+        "ZWToolKit/Classes/ZWLinkView/**/*"
+      ]
     }
   ]
 }

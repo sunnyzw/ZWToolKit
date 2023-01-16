@@ -1,6 +1,6 @@
 PODS:
   - MBProgressHUD (1.2.0)
-  - ZWToolKit/ZWProgressHUD (0.1.0):
+  - ZWToolKit/ZWProgressHUD (0.1.1):
     - MBProgressHUD
 
 DEPENDENCIES:
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  ZWToolKit: 91f952cde7c8b024eec4ad5830de8757627aa17c
+  ZWToolKit: cf289c5e363c2262906661875659522c1dfe75ce
 
 PODFILE CHECKSUM: 6cb997e6ee7266a278725599344c9c721c3badb4
 

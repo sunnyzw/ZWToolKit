@@ -32,3 +32,6 @@ ZWToolKit is available under the MIT license. See the LICENSE file for more info
 
 #### 0.1.0
 基于 MBProgressHUD 二次封装的加载器
+
+ Tag: 0.1.2
+新增ZWLinkView工具类

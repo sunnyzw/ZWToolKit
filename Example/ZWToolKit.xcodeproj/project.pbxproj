@@ -57,6 +57,10 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A72FFB1580D692D37C234880 /* ZWToolKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZWToolKit.podspec; path = ../ZWToolKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B891D7DA52E656551A7BED3A /* Pods-ZWToolKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWToolKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZWToolKit_Example/Pods-ZWToolKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F77BEED629753311004468BD /* ZWHUDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWHUDViewController.h; sourceTree = "<group>"; };
+		F77BEED729753311004468BD /* ZWHUDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWHUDViewController.m; sourceTree = "<group>"; };
+		F77BEEDA29753637004468BD /* ZWLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWLinkViewController.h; sourceTree = "<group>"; };
+		F77BEEDB29753637004468BD /* ZWLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWLinkViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,10 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* ZWViewController.h */,
 				6003F5A6195388D20070C39A /* ZWViewController.m */,
+				F77BEED629753311004468BD /* ZWHUDViewController.h */,
+				F77BEED729753311004468BD /* ZWHUDViewController.m */,
+				F77BEEDA29753637004468BD /* ZWLinkViewController.h */,
+				F77BEEDB29753637004468BD /* ZWLinkViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
