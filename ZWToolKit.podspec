@@ -31,7 +31,9 @@ TODO: Add long description of the pod here.
 # 基于MBProgressHUD二次封装的HUD
   s.subspec 'ZWProgressHUD' do |cs|
     cs.source_files = 'ZWToolKit/Classes/ZWProgressHUD/**/*'
-    cs.resource = ['ZWToolKit/Assets/ZWProgressHUD/*']
+    cs.resource_bundles = {
+      'ZWToolKit' => ['ZWToolKit/Assets/ZWProgressHUD.xcassets']
+    }
     cs.dependency 'MBProgressHUD'
   end
   

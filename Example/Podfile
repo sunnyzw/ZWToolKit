@@ -7,7 +7,6 @@ platform :ios, '10.0'
 target 'ZWToolKit_Example' do
   pod 'ZWToolKit/ZWProgressHUD', :path => '../'
 
-  
   post_install do |installer|
     installer.pods_project.build_configurations.each do |config|
       #解决Xcode14中Pod工程中的Bundle target签名报错

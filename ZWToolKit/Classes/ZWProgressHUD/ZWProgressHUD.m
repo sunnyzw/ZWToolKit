@@ -150,8 +150,8 @@
 
 /// 加载组件中图片
 + (UIImage *)loadBundleImage:(NSString *)imageName {
-    NSString *bundleNameWithExtension = @"ZWProgressHUD.bundle";
-    NSString *bundlePath = [[NSBundle bundleForClass:[ZWProgressHUD class]].resourcePath stringByAppendingPathComponent:bundleNameWithExtension];
+    NSString *bundleNameWithExtension = @"ZWToolKit.bundle";
+    NSString *bundlePath = [[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:bundleNameWithExtension];
     NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
     UIImage *image = [UIImage imageNamed:imageName inBundle:bundle compatibleWithTraitCollection:nil];
     if (image) {

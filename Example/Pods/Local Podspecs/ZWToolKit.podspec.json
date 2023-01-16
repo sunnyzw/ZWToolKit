@@ -22,9 +22,11 @@
     {
       "name": "ZWProgressHUD",
       "source_files": "ZWToolKit/Classes/ZWProgressHUD/**/*",
-      "resources": [
-        "ZWToolKit/Assets/ZWProgressHUD/*"
-      ],
+      "resource_bundles": {
+        "ZWToolKit": [
+          "ZWToolKit/Assets/ZWProgressHUD.xcassets"
+        ]
+      },
       "dependencies": {
         "MBProgressHUD": [
 
