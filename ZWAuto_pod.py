@@ -15,9 +15,15 @@
 --push          : 表示直接上传到pod       (默认为 验证 ，即 pod lib lint)
 repo=           : 本地私有化仓库名称，准备做私有库发布的
 --m : 版本commit信息,多行用;隔开，=, 会把commit信息，写入readMe 中
-完整示例: 
-python ZWAuto_pod.py --auto  --push  --repo=sunny-specs --m="1.这次更新了****;2.这次还更新了****"
-python ZWAuto_pod.py --auto-remove  --push --repo=sunny-specs  --m="1.这次更新了****;2.这次还更新了****"
+
+完整示例:
+1. 自增版本号，只增加最后一位（1.0.0 ---> 1.0.1）
+python ZWAuto_pod.py --auto --push --repo=sunny-specs --m="1.这次更新了****;2.这次还更新了****"
+
+2. 推送至代码仓库失败时，删除当前组件远程git仓库tag，并重新打tag，不修改podspec的版本号
+python ZWAuto_pod.py --auto-remove --push --repo=sunny-specs  --m="1.这次更新了****;2.这次还更新了****"
+
+3. 自定义tag版本号（指定版本号1.0.0）
 python ZWAuto_pod.py --push --repo=sunny-specs --tagVersion=0.1.1 --m="1.这次更新了****;2.这次还更新了****"
 *****************************************************************
 """
