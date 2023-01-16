@@ -321,18 +321,18 @@ def pod_spc_lint():
 
 # pod 发布
 def pod_repo_push():
-    global sourcesStr
-    if sourcesStr == '':
-     sourcesStr = '--sources='+','.join(sources)
-      
-#    发布到远端私有仓库
-#    pod_push_command = 'pod repo push %s %s %s %s %s %s --skip-import-validation' % (
-#        repo_name,spec_name, allow_warnings, use_libraries, verbose, sourcesStr)
-#    发布到远端trunk仓库
-    pod_push_command = 'pod trunk push %s %s %s %s --skip-import-validation' % (
-        spec_name, allow_warnings, use_libraries, verbose)
-    print('\n======== %s ========' % pod_push_command)
-    os.system(pod_push_command)
+#    if repo_name == '':
+        # 发布到远端trunk仓库
+        pod_push_command = 'pod trunk push %s %s %s %s --skip-import-validation' % (spec_name, allow_warnings, use_libraries, verbose)
+        print('\n======== %s ========' % pod_push_command)
+        os.system(pod_push_command)
+#    else:
+#        # 发布到远端私有仓库
+#        global sourcesStr
+#        if sourcesStr == '':
+#            sourcesStr = '--sources='+','.join(sources)
+#            pod_push_command = 'pod repo push %s %s %s %s %s %s --skip-import-validation' % (repo_name, spec_name, allow_warnings, use_libraries, verbose, sourcesStr)
+
 
 
 
