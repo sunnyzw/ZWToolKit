@@ -308,6 +308,8 @@ def pod_spc_lint():
 def pod_repo_push():
     if repo_name == '':
         # 发布到远端trunk仓库 pod trunk push
+        regaccount = "pod trunk register 'sunny_szw@163.com' 'sunnyzw'"
+        os.system(regaccount)
         pod_push_command = 'pod trunk push %s %s %s %s --skip-import-validation' % (spec_name, allow_warnings, use_libraries, verbose)
         print('\n======== %s ========' % pod_push_command)
         os.system(pod_push_command)
