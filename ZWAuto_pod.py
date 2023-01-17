@@ -257,7 +257,7 @@ def edit_readme():
     if readme_commit != '':
       readmepath = get_readme_filepath()
       file = open(readmepath, 'a')
-      commitcontent ='\n '+'Tag: ' + tag_version +'\n'+ readme_commit.replace(';','\n')
+      commitcontent = '\n'+'Tag: ' + tag_version +'\n'+ readme_commit.replace(';','\n')
       file.write(commitcontent)
       file.close()    
 
