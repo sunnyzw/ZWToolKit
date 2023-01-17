@@ -9,6 +9,7 @@
 #import "ZWTableView+Category.h"
 #import <objc/runtime.h>
 #import "AppMacro.h"
+#import "UIColor+Category.h"
 
 NSString *const kTableNoDataViewObserveKeyPath      = @"frame";
 static const NSString *kPlaceholderViewKey          = @"placeholderView";

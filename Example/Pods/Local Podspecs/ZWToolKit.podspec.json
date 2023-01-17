@@ -1,6 +1,6 @@
 {
   "name": "ZWToolKit",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "summary": "常用工具集合库",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/sunnyzw/ZWToolKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/sunnyzw/ZWToolKit.git",
-    "tag": "0.1.3"
+    "tag": "0.1.4"
   },
   "source_files": "ZWToolKit/Classes/**/*",
   "platforms": {

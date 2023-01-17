@@ -9,6 +9,7 @@
 #import "ZWCollectionView+Category.h"
 #import <objc/runtime.h>
 #import "AppMacro.h"
+#import "UIColor+Category.h"
 
 NSString *const kCollectionNoDataViewObserveKeyPath = @"frame";
 static const NSString *kCollectionHeaderViewKey     = @"collectionHeaderView";
