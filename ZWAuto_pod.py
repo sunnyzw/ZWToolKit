@@ -148,7 +148,7 @@ def get_args():
     print('=== verbose          : %s' % verbose)
     print('=== allow_warnings   : %s' % allow_warnings)
     print('=== repo_name        : %s' % repo_name)
-    print('==========================================\n')
+    print('============================================\n')
 
 def get_gitRepoRemoteCode():
     os.system('git pull')
@@ -196,16 +196,14 @@ def get_readme_filepath():
 # ============================
 def edit_spec_version():
     fileName = get_specName()
-    print('================ 当前文件夹下的specName  ==================')
+    print('========== 当前文件夹下的specName  =========')
     print(fileName)
-    print('============================================')
-    print('\n')
+    print('============================================\n')
 
     filepath = os.getcwd() + '/' + spec_name
-    print('================ spec 路径 ==================')
+    print('================ spec 路径 =================')
     print(filepath)
-    print('============================================')
-    print('\n')
+    print('============================================\n')
 
     global auto_tag
     global tag_version
@@ -285,7 +283,7 @@ def commit_and_push_git():
         remove_localtag_command = 'git tag -d %s'%(tag_version)
         remove_tag_command = 'git push origin :refs/tags/%s' % (tag_version)
         print('\n')
-        print('---------- git tag -d ----------')
+        print('---------------- git tag -d ----------------')
         os.system(remove_localtag_command)
         os.system(remove_tag_command)
 
@@ -299,16 +297,16 @@ def commit_and_push_git():
     commit_open = os.popen(commit_command)
     commit_rsp = commit_open.read()
     commit_open.close()
-    print('\n---------- git commit ----------')
+    print('\n---------------- git commit ----------------')
     print(commit_rsp)
 
-    print('\n---------- git push ----------')
+    print('\n----------------- git push -----------------')
     push_open = os.popen(push_command)
     push_rsp = push_open.read()
     push_open.close()
 
 
-    print('\n---------- git tag ----------')
+    print('\n------------------ git tag -----------------')
     local_tag_open = os.popen(git_tag_command_local)
     local_tag_rsp = local_tag_open.read()
     local_tag_open.close()
