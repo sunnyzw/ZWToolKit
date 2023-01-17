@@ -134,14 +134,14 @@ def get_args():
 
     print('\n======== 解析参数，赋值给全局变量 ==========')
     if auto_tag == '--auto':
-        print('=== auto_tag : %s (自动增加版本号)' % auto_tag)
+        print('=== auto_tag     : %s (自动增加版本号)' % auto_tag)
     elif auto_tag == '--auto-remove':
-        print('=== auto_tag : %s (删除当前tag并重新打tag)' % auto_tag)
+        print('=== auto_tag     : %s (删除当前tag并重新打tag)' % auto_tag)
     else:
       if tag_version =='':
-        print('=== 指定版本号 : 指定版本号和 git tag %s'%tag_version)
+        print('=== 指定版本号     : 指定版本号和 git tag %s'%tag_version)
       else:
-        print('=== auto_tag : 不处理版本号和 git tag')
+        print('=== auto_tag     : 不处理版本号和 git tag')
     
     
     print('=== use_libraries    : %s' % use_libraries)
@@ -196,7 +196,7 @@ def get_readme_filepath():
 # ============================
 def edit_spec_version():
     fileName = get_specName()
-    print('========== 当前文件夹下的specName  =========')
+    print('========== 当前文件夹下的specName ==========')
     print(fileName)
     print('============================================\n')
 

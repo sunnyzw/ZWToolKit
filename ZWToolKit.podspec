@@ -45,6 +45,7 @@ TODO: Add long description of the pod here.
   
   # 二次封装SDWebImage，便于维护
   s.subspec 'ZWImageView' do |cs|
+    cs.frameworks = 'UIKit', 'Foundation'
     cs.source_files = 'ZWToolKit/Classes/ZWImageView/**/*'
     cs.dependency 'SDWebImage', '~> 5.0'
     cs.dependency 'SDWebImageFLPlugin', '~> 0.6.0'
