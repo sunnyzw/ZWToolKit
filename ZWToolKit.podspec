@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name            = 'ZWToolKit'
-  s.version         = '0.1.2'
+  s.version         = '0.1.3'
   s.summary         = '常用工具集合库'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  # 基于MBProgressHUD二次封装的HUD
+  # 二次封装MBProgressHUD，便于使用
   s.subspec 'ZWProgressHUD' do |cs|
     cs.source_files = 'ZWToolKit/Classes/ZWProgressHUD/**/*'
     cs.resource_bundles = {
@@ -40,11 +40,14 @@ TODO: Add long description of the pod here.
   
   # 部分文字可点击的文本
   s.subspec 'ZWLinkView' do |cs|
-    cs.source_files = [
-      'ZWToolKit/Classes/ZWCommon/**/*',
-      'ZWToolKit/Classes/Extensions/NSString/**/*',
-      'ZWToolKit/Classes/ZWLinkView/**/*'
-    ]
+    cs.source_files = 'ZWToolKit/Classes/ZWCommon/**/*', 'ZWToolKit/Classes/Extensions/NSString/**/*', 'ZWToolKit/Classes/ZWLinkView/**/*'
+  end
+  
+  # 二次封装SDWebImage，便于维护
+  s.subspec 'ZWImageView' do |cs|
+    cs.source_files = 'ZWToolKit/Classes/ZWImageView/**/*'
+    cs.dependency 'SDWebImage', '~> 5.0'
+    cs.dependency 'SDWebImageFLPlugin', '~> 0.6.0'
   end
   
 end

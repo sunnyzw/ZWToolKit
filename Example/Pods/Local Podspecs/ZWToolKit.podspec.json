@@ -41,6 +41,18 @@
         "ZWToolKit/Classes/Extensions/NSString/**/*",
         "ZWToolKit/Classes/ZWLinkView/**/*"
       ]
+    },
+    {
+      "name": "ZWImageView",
+      "source_files": "ZWToolKit/Classes/ZWImageView/**/*",
+      "dependencies": {
+        "SDWebImage": [
+          "~> 5.0"
+        ],
+        "SDWebImageFLPlugin": [
+          "~> 0.6.0"
+        ]
+      }
     }
   ]
 }

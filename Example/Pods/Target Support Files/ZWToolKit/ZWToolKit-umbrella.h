@@ -10,15 +10,10 @@
 #endif
 #endif
 
-#import "NSString+Category.h"
-#import "UIColor+Category.h"
-#import "AppMacro.h"
-#import "ZWLinkView.h"
-#import "ZWProgressHUD.h"
-#import "AppMacro.h"
-#import "NSString+Category.h"
-#import "ZWLinkView.h"
-#import "ZWProgressHUD.h"
+#import "ZWAnimatedImageView.h"
+#import "ZWImageCache.h"
+#import "ZWImageView.h"
+#import "ZWWebImageLoader.h"
 
 FOUNDATION_EXPORT double ZWToolKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char ZWToolKitVersionString[];

@@ -1,27 +1,34 @@
 PODS:
-  - MBProgressHUD (1.2.0)
-  - ZWToolKit (0.1.2):
-    - ZWToolKit/ZWLinkView (= 0.1.2)
-    - ZWToolKit/ZWProgressHUD (= 0.1.2)
-  - ZWToolKit/ZWLinkView (0.1.2)
-  - ZWToolKit/ZWProgressHUD (0.1.2):
-    - MBProgressHUD
+  - FLAnimatedImage (1.0.17)
+  - SDWebImage (5.14.3):
+    - SDWebImage/Core (= 5.14.3)
+  - SDWebImage/Core (5.14.3)
+  - SDWebImageFLPlugin (0.6.0):
+    - FLAnimatedImage (>= 1.0.11)
+    - SDWebImage/Core (~> 5.10)
+  - ZWToolKit/ZWImageView (0.1.2):
+    - SDWebImage (~> 5.0)
+    - SDWebImageFLPlugin (~> 0.6.0)
 
 DEPENDENCIES:
-  - ZWToolKit (from `../`)
+  - ZWToolKit/ZWImageView (from `../`)
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
-    - MBProgressHUD
+    - FLAnimatedImage
+    - SDWebImage
+    - SDWebImageFLPlugin
 
 EXTERNAL SOURCES:
   ZWToolKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  ZWToolKit: 57cd8d2a404a0528d27933139b3ef5a1967817c8
+  FLAnimatedImage: bbf914596368867157cc71b38a8ec834b3eeb32b
+  SDWebImage: 9c36e66c8ce4620b41a7407698dda44211a96764
+  SDWebImageFLPlugin: 72efd2cfbf565bc438421abb426f4bcf7b670754
+  ZWToolKit: 63962af32223aaad28d2ad742f1ce9f418bb5418
 
-PODFILE CHECKSUM: 16924271620bec3aa751b092c9db9ee3ad5713a1
+PODFILE CHECKSUM: 8553fc364703416de53b798d054cb12e3d0b7455
 
 COCOAPODS: 1.11.3
