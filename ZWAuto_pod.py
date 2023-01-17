@@ -184,15 +184,12 @@ def get_readme_filepath():
     global spec_name
     # 获取 podspec文件路径和文件名
     work_path = os.getcwd()
-    # list_file = os.path.split(work_path)
-    # spec_full_path = os.path.dirname(list_file[0]) + '/' + 'README.md'
     spec_full_path = work_path + '/' + 'README.md'
     return (spec_full_path)
 
     
 # ============================
-# 修改 spec 的 version，
-# 并同步给tag_version
+# 修改 spec 的 version，并同步给tag_version
 # ============================
 def edit_spec_version():
     fileName = get_specName()
