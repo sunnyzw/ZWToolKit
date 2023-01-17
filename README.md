@@ -47,3 +47,6 @@ Tag 0.1.1
  Tag: 0.1.3
 
 二次封装SDWebImage，便于维护
+ Tag: 0.1.3
+
+二次封装SDWebImage，便于维护
