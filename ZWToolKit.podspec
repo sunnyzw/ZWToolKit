@@ -26,8 +26,8 @@ TODO: Add long description of the pod here.
   s.author          = { 'Sunny' => 'sunny_szw@163.com' }
   s.source          = { :git => 'https://github.com/sunnyzw/ZWToolKit.git', :tag => s.version.to_s }
   s.source_files    = 'ZWToolKit/Classes/**/*'
-
   s.ios.deployment_target = '10.0'
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
 
   # ZWProgressHUD, 二次封装MBProgressHUD, 便于使用
   s.subspec 'ZWProgressHUD' do |cs|
