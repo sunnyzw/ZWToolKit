@@ -8,15 +8,19 @@ PODS:
     - FLAnimatedImage (>= 1.0.11)
     - SDWebImage/Core (~> 5.10)
   - ZWToolKit (0.1.3):
+    - ZWToolKit/ZWCollectionView (= 0.1.3)
     - ZWToolKit/ZWImageView (= 0.1.3)
     - ZWToolKit/ZWLinkView (= 0.1.3)
     - ZWToolKit/ZWProgressHUD (= 0.1.3)
+    - ZWToolKit/ZWTableView (= 0.1.3)
+  - ZWToolKit/ZWCollectionView (0.1.3)
   - ZWToolKit/ZWImageView (0.1.3):
     - SDWebImage (~> 5.0)
     - SDWebImageFLPlugin (~> 0.6.0)
   - ZWToolKit/ZWLinkView (0.1.3)
   - ZWToolKit/ZWProgressHUD (0.1.3):
     - MBProgressHUD
+  - ZWToolKit/ZWTableView (0.1.3)
 
 DEPENDENCIES:
   - ZWToolKit (from `../`)
@@ -37,8 +41,8 @@ SPEC CHECKSUMS:
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   SDWebImage: 9c36e66c8ce4620b41a7407698dda44211a96764
   SDWebImageFLPlugin: 72efd2cfbf565bc438421abb426f4bcf7b670754
-  ZWToolKit: 23d01e134ccd77b11c71103ad2b604e5566192fc
+  ZWToolKit: 61feadbd6ffba6e397167943ff626894d87eb1c0
 
-PODFILE CHECKSUM: 21c481a0ab712b15b1d4ad8fccc3d80664fc68db
+PODFILE CHECKSUM: 957c047f3b0b7e45df809e0431a9580890df997f
 
 COCOAPODS: 1.11.3

@@ -1,8 +1,4 @@
-#!/usr/bin/python2
-# -*- coding:utf-8 -*-
-
-
-""" 
+"""
 *****************************************************************
 脚本说明：
 目录：需要放在pod工程的根目录下，即和 .podspec 文件同一目录
@@ -14,36 +10,25 @@
 --allow-warnings: 使用 --allow-warnings (是否忽略警告，大多数都需要此参数)
 --push          : 表示直接上传到pod       (默认为 验证 ，即 pod lib lint)
 repo=           : 本地私有化仓库名称，准备做私有库发布的
---m : 版本commit信息,多行用;隔开，=, 会把commit信息，写入readMe 中
+--m : 版本commit信息，多行用\n隔开，会把commit信息写入 README.md 中
 
 完整示例:
 1. 自增版本号，只增加最后一位（1.0.0 ---> 1.0.1）
-python ZWAuto_pod.py --auto --push --repo=sunny-specs --m="1.这次更新了****;2.这次还更新了****"
+python ZWAuto_pod.py --auto --push --repo=sunny-specs --m="xxxx"
 
 2. 推送至代码仓库失败时，删除当前组件远程git仓库tag，并重新打tag，不修改podspec的版本号
-python ZWAuto_pod.py --auto-remove --push --repo=sunny-specs  --m="1.这次更新了****;2.这次还更新了****"
+python ZWAuto_pod.py --auto-remove --push --repo=sunny-specs  --m="1.这次更新了****\n2.这次还更新了****"
 
 3. 自定义tag版本号（指定版本号1.0.0）
-python ZWAuto_pod.py --push --repo=sunny-specs --tagVersion=0.1.1 --m="1.这次更新了****;2.这次还更新了****"
+python ZWAuto_pod.py --push --repo=sunny-specs --tagVersion=0.1.1 --m="1.这次更新了****\n2.这次还更新了****"
+
+如果发布公开库，则不需要传 --repo=sunny-specs 参数
 *****************************************************************
 """
-#pod repo push sunny-specs ZWToolKit.podspec --verbose
-#  --sources="https://github.com/sunnyzw/sunny-specs, https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git"
-# --allow-warnings --skip-import-validation
 
 import os, sys
 import fileinput
 import time
-
-# print('\n')
-# print('=================== 参数 ==================')
-# print('argvs = %s'%sys.argv)
-# print('===========================================')
-# print('\n\n')
-
-# mygit = ''
-# sources = ['https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git']
-
 
 # 是否需要拉取git远端代码，有其他人提交代码后需要先拉取远端代码到本地
 is_gitPull = False
@@ -79,6 +64,7 @@ repo_name = ''
 #readMe的修改信息 用于接收--m 参数
 readme_commit = ''
 
+# 私有库发布源
 sources = [
     #私有库源
     'https://github.com/sunnyzw/sunny-specs',
@@ -88,7 +74,8 @@ sources = [
 # 用于接收 --sources 参数
 sourcesStr = ''
 
-# 获取参数
+
+# 获取命令参数
 def get_args():
 
     global auto_tag
@@ -98,11 +85,9 @@ def get_args():
     global repo_name
     global is_release_push
     global tag_version
-
     global sources
     global sourcesStr
     global is_gitPull
-
     global readme_commit
 
     for arg in sys.argv:
@@ -143,20 +128,19 @@ def get_args():
       else:
         print('=== auto_tag         : 不处理版本号和 git tag')
     
-    
     print('=== use_libraries    : %s' % use_libraries)
     print('=== verbose          : %s' % verbose)
     print('=== allow_warnings   : %s' % allow_warnings)
     print('=== repo_name        : %s' % repo_name)
     print('============================================\n')
 
+
+# 拉取远端代码 git pull
 def get_gitRepoRemoteCode():
     os.system('git pull')
 
 
-# ============================
-# 获取spec路径
-# ============================
+# 获取 spec 路径
 def get_spec_filepath():
 
     global spec_name
@@ -188,9 +172,7 @@ def get_readme_filepath():
     return (spec_full_path)
 
     
-# ============================
 # 修改 spec 的 version，并同步给tag_version
-# ============================
 def edit_spec_version():
     fileName = get_specName()
     print('========== 当前文件夹下的specName ==========')
@@ -227,7 +209,7 @@ def edit_spec_version():
                 versionWrap[-1] = str(new_last_version)
 
                 # 得到最新版本号，并赋给 tag_version
-                new_version = str.join('.',versionWrap)
+                new_version = str.join('.', versionWrap)
                 tag_version = new_version
 
                 # 修改当前行的版本内容，为写入做准备，需要有回车
@@ -249,17 +231,22 @@ def edit_spec_version():
 
     file.close()
 
-    with open(filepath ,'w') as wfile:
+    with open(filepath, 'w') as wfile:
         wfile.writelines(all_line)
         wfile.close()
-        
+
+
+# 编辑 README.md 文件
 def edit_readme():
     if readme_commit != '':
-      readmepath = get_readme_filepath()
-      file = open(readmepath, 'a')
-      commitcontent = '\n'+'Tag: ' + tag_version +'\n'+ readme_commit.replace(';','\n')
-      file.write(commitcontent)
-      file.close()    
+        readmepath = get_readme_filepath()
+        file = open(readmepath, 'r+')
+        origincontent = file.read()
+        substrlist = origincontent.split('##  版本更新记录', 1)
+        commitcontent = substrlist[0] + '##  版本更新记录\n\n' + 'Tag: ' + tag_version + '\n' + readme_commit + substrlist[1]
+        file.truncate(0)
+        file.write(commitcontent)
+        file.close()
 
 def commit_and_push_git():
 
@@ -267,8 +254,8 @@ def commit_and_push_git():
     global auto_tag
 
     # commit 命令
-    ctime = time.strftime("%Y-%m-%d %H:%M%:%S",time.localtime())
-    commit_command = 'git commit -m "AUTO_VERSION   最新上传日期：%s       版本号：%s"' % (ctime,tag_version)
+    ctime = time.strftime("%Y-%m-%d %H:%M%:%S", time.localtime())
+    commit_command = 'git commit -m "AUTO_VERSION   最新上传日期：%s       版本号：%s"' % (ctime, tag_version)
 
     # 获取当前分支名称, push命令
     git_head = os.popen('git symbolic-ref --short -q HEAD')
@@ -279,14 +266,12 @@ def commit_and_push_git():
     if auto_tag == '--auto-remove':
         remove_localtag_command = 'git tag -d %s'%(tag_version)
         remove_tag_command = 'git push origin :refs/tags/%s' % (tag_version)
-        print('\n')
-        print('---------------- git tag -d ----------------')
+        print('\n---------------- git tag -d ----------------')
         os.system(remove_localtag_command)
         os.system(remove_tag_command)
 
     # tag 命令
-    git_tag_command_local = 'git tag -m "%s %s" %s'%('version :',tag_version,tag_version)
-    #git_tag_command_remote = 'git push --tag'
+    git_tag_command_local = 'git tag -m "%s %s" %s'%('version :', tag_version, tag_version)
     git_tag_command_remote = 'git push origin %s' % (tag_version)
     # 调用 git 命令
     os.system('git add .')
@@ -302,7 +287,6 @@ def commit_and_push_git():
     push_rsp = push_open.read()
     push_open.close()
 
-
     print('\n------------------ git tag -----------------')
     local_tag_open = os.popen(git_tag_command_local)
     local_tag_rsp = local_tag_open.read()
@@ -313,37 +297,33 @@ def commit_and_push_git():
     remote_tag_open.close()
 
 
-# pod 验证
+# pod 验证 pod spec lint
 def pod_spc_lint():
-    pod_lint_command = 'pod spec lint %s%s%s%s' % (
-        spec_name, allow_warnings, use_libraries, verbose)
+    pod_lint_command = 'pod spec lint %s%s%s%s' % (spec_name, allow_warnings, use_libraries, verbose)
     print('\n======== %s ========' % pod_lint_command)
     os.system(pod_lint_command)
+
 
 # pod 发布
 def pod_repo_push():
     if repo_name == '':
-        # 发布到远端trunk仓库
+        # 发布到远端trunk仓库 pod trunk push
         pod_push_command = 'pod trunk push %s %s %s %s --skip-import-validation' % (spec_name, allow_warnings, use_libraries, verbose)
         print('\n======== %s ========' % pod_push_command)
         os.system(pod_push_command)
     else:
-        # 发布到远端私有仓库
+        # 发布到远端私有仓库 pod repo push
         global sourcesStr
         if sourcesStr == '':
-            sourcesStr = '--sources='+','.join(sources)
+            sourcesStr = '--sources=' + ','.join(sources)
             pod_push_command = 'pod repo push %s %s %s %s %s %s --skip-import-validation' % (repo_name, spec_name, allow_warnings, use_libraries, verbose, sourcesStr)
 
 
 
-
-# ========================================
-#               程序启动入口
-# ========================================
-
+# 程序启动入口
 if __name__ == "__main__":
 
-    #获取参数后，
+    #获取参数
     get_args()
     #如果需要拉取远端代码执行git pull命令
     if is_gitPull == True:

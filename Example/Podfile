@@ -10,6 +10,8 @@ target 'ZWToolKit_Example' do
 #  pod 'ZWToolKit/ZWImageView', :path => '../'
 #  pod 'ZWToolKit/ZWLinkView', :path => '../'
 #  pod 'ZWToolKit/ZWProgressHUD', :path => '../'
+#  pod 'ZWToolKit/ZWTableView', :path => '../'
+#  pod 'ZWToolKit/ZWCollectionView', :path => '../'
 
   post_install do |installer|
     installer.pods_project.build_configurations.each do |config|

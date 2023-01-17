@@ -53,6 +53,22 @@
           "~> 0.6.0"
         ]
       }
+    },
+    {
+      "name": "ZWTableView",
+      "source_files": [
+        "ZWToolKit/Classes/ZWCommon/**/*",
+        "ZWToolKit/Classes/Extensions/UIColor/**/*",
+        "ZWToolKit/Classes/ZWTableView/**/*"
+      ]
+    },
+    {
+      "name": "ZWCollectionView",
+      "source_files": [
+        "ZWToolKit/Classes/ZWCommon/**/*",
+        "ZWToolKit/Classes/Extensions/UIColor/**/*",
+        "ZWToolKit/Classes/ZWCollectionView/**/*"
+      ]
     }
   ]
 }

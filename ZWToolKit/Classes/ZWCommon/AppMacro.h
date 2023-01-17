@@ -9,6 +9,8 @@
 #ifndef AppMacro_h
 #define AppMacro_h
 
+#import "UIColor+Category.h"
+
 /// Bundle ID
 static NSString *const BundleIDKey          = @"CFBundleIdentifier";
 #define BundleID                            NSBundle.mainBundle.infoDictionary[BundleIDKey]

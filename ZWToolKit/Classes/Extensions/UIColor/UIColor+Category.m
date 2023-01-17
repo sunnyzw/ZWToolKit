@@ -1,8 +1,9 @@
 //
 //  UIColor+Category.m
-//  ZiShu
+//  Sunny
 //
-//  Created by ZiShu on 2021/4/26.
+//  Created by Sunny on 2022/7/1.
+//  Copyright © 2022 Sunny. All rights reserved.
 //
 
 #import "UIColor+Category.h"
