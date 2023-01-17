@@ -95,26 +95,26 @@ def get_args():
             auto_tag = arg
         elif arg == "--use-libraries":
             use_libraries = "{}{}".format(" ", arg)
-        elif arg == '--verbose':
-            verbose = ' %s' % (arg)
-        elif arg == '--allow-warnings':
-            allow_warnings = ' ' + arg
-        elif arg.startswith('--sources='):
-            sourcesStr = ' ' + arg    
-        elif arg.startswith('--repo='):
-            liarg = arg.split('=', 1)
+        elif arg == "--verbose":
+            verbose = " %s" % (arg)
+        elif arg == "--allow-warnings":
+            allow_warnings = " " + arg
+        elif arg.startswith("--sources="):
+            sourcesStr = " " + arg
+        elif arg.startswith("--repo="):
+            liarg = arg.split("=", 1)
             repo_name = liarg[1]
-        elif arg == '--push':
+        elif arg == "--push":
             is_release_push = True
-        elif arg == '--gitpull':
+        elif arg == "--gitpull":
             is_gitPull = True
-        elif arg == '--retag':
+        elif arg == "--retag":
             is_release_push = True
-        elif arg.startswith('--tagVersion='):
-            artag = arg.split('=', 1)
+        elif arg.startswith("--tagVersion="):
+            artag = arg.split("=", 1)
             tag_version = artag[1]
-        elif arg.startswith('--m='):
-            arCommit = arg.split('=', 1)
+        elif arg.startswith("--m="):
+            arCommit = arg.split("=", 1)
             readme_commit = arCommit[1]
 
     print("\n======== 解析参数，赋值给全局变量 ==========")
@@ -282,12 +282,12 @@ def commit_and_push_git():
     print("\n---------------- git commit ----------------")
     print(commit_rsp)
 
-    print('\n----------------- git push -----------------')
+    print("\n----------------- git push -----------------")
     push_open = os.popen(push_command)
     push_rsp = push_open.read()
     push_open.close()
 
-    print('\n------------------ git tag -----------------')
+    print("\n------------------ git tag -----------------")
     local_tag_open = os.popen(git_tag_command_local)
     local_tag_rsp = local_tag_open.read()
     local_tag_open.close()
@@ -332,10 +332,10 @@ if __name__ == "__main__":
     edit_spec_version()
     edit_readme()
     # 如果自动更改版本号，则提交代码
-    if auto_tag == '--auto' or auto_tag == '--auto-remove':
+    if auto_tag == "--auto" or auto_tag == "--auto-remove":
         commit_and_push_git()
     # 如果是指定版本tag，也需要提交代码
-    if tag_version != '':
+    if tag_version != "":
         commit_and_push_git()
     if is_release_push == True:
         pod_repo_push()
