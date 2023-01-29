@@ -34,14 +34,6 @@ Tag: 0.1.7
 修复bug
 
 Tag: 0.1.6
-
-修复bug
-
-Tag: 0.1.6
-
-修复bug
-
-Tag: 0.1.6
 修复bug
 
 Tag: 0.1.5
