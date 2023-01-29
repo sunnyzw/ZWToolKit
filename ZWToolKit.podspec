@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name            = 'ZWToolKit'
-  s.version         = '0.1.5'
+  s.version         = ''
   s.summary         = '常用工具集合库'
 
 # This description is used to generate tags and improve search results.

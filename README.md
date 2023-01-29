@@ -30,18 +30,21 @@ ZWToolKit is available under the MIT license. See the LICENSE file for more info
 
 ##  版本更新记录
 
+Tag: 
+修复bug
+
 Tag: 0.1.5
 修复bug
 
-#### 0.1.4
+Tag: 0.1.4
 新增ZWTableView
 新增ZWCollectionView
 
-#### 0.1.3
+Tag: 0.1.3
 二次封装SDWebImage，便于维护
 
-#### 0.1.2
+Tag: 0.1.2
 新增ZWLinkView工具类
 
-#### 0.1.1
+Tag: 0.1.1
 基于 MBProgressHUD 二次封装的加载器
