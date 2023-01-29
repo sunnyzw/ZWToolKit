@@ -17,7 +17,7 @@ repo=           : 本地私有化仓库名称，准备做私有库发布的
 python ZWAuto_pod.py --auto --push --repo=sunny-specs --m="xxxx"
 
 2. 推送至代码仓库失败时，删除当前组件远程git仓库tag，并重新打tag，不修改podspec的版本号
-python ZWAuto_pod.py --auto-remove --push --repo=sunny-specs  --m="1.这次更新了****\n2.这次还更新了****"
+python ZWAuto_pod.py --auto-remove --push --repo=sunny-specs --m="1.这次更新了****\n2.这次还更新了****"
 
 3. 自定义tag版本号（指定版本号1.0.0）
 python ZWAuto_pod.py --push --repo=sunny-specs --tagVersion=0.1.1 --m="1.这次更新了****\n2.这次还更新了****"
@@ -240,13 +240,15 @@ def edit_spec_version():
 def edit_readme():
     if readme_commit != "":
         readmepath = get_readme_filepath()
-        file = open(readmepath, "r+")
-        origincontent = file.read()
-        substrlist = origincontent.split("##  版本更新记录", 1)
-        commitcontent = substrlist[0] + "##  版本更新记录\n\n" + "Tag: " + tag_version + "\n" + readme_commit + substrlist[1]
-        file.truncate(0)
-        file.write(commitcontent)
-        file.close()
+        f = open(readmepath, "r+")
+        t = f.read()
+        splitStr = "##  版本更新记录"
+        index = t.find(splitStr) + len(splitStr + "\n\n")
+        d = t[:index] + "Tag: " + tag_version + "\n" + readme_commit + "\n\n" + t[index:]
+        f.seek(0, 0)
+        f.write(d)
+        f.close()
+
 
 def commit_and_push_git():
 

@@ -30,6 +30,10 @@ ZWToolKit is available under the MIT license. See the LICENSE file for more info
 
 ##  版本更新记录
 
+Tag: 0.1.5
+
+修复bug
+
 #### 0.1.4
 新增ZWTableView
 新增ZWCollectionView
