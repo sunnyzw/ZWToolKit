@@ -244,7 +244,7 @@ def edit_readme():
         t = f.read()
         splitStr = "##  版本更新记录"
         index = t.find(splitStr) + len(splitStr + "\n\n")
-        d = t[:index] + "Tag: " + tag_version + "\n" + readme_commit + "\n\n" + t[index:]
+        d = t[:index] + "Tag: " + tag_version + readme_commit + "\n\n" + t[index:]
         f.seek(0, 0)
         f.write(d)
         f.close()
