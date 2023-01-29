@@ -17,7 +17,7 @@ repo=           : 本地私有化仓库名称，准备做私有库发布的
 python ZWAuto_pod.py --auto --push --repo=sunny-specs --m="xxxx"
 
 2. 推送至代码仓库失败时，删除当前组件远程git仓库tag，并重新打tag，不修改podspec的版本号
-python ZWAuto_pod.py --auto-remove --push --repo=sunny-specs --m="1.这次更新了****\n2.这次还更新了****"
+python ZWAuto_pod.py --auto-remove --push --repo=sunny-specs
 
 3. 自定义tag版本号（指定版本号1.0.0）
 python ZWAuto_pod.py --push --repo=sunny-specs --tagVersion=0.1.1 --m="1.这次更新了****\n2.这次还更新了****"
