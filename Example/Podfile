@@ -6,10 +6,11 @@ platform :ios, '10.0'
 
 target 'ZWToolKit_Example' do
   
-  pod 'ZWToolKit', :path => '../'
+#  pod 'ZWToolKit', :path => '../'
+  pod 'ZWToolKit/ZWNetworking', :path => '../'
+#  pod 'ZWToolKit/ZWProgressHUD', :path => '../'
 #  pod 'ZWToolKit/ZWImageView', :path => '../'
 #  pod 'ZWToolKit/ZWLinkView', :path => '../'
-#  pod 'ZWToolKit/ZWProgressHUD', :path => '../'
 #  pod 'ZWToolKit/ZWTableView', :path => '../'
 #  pod 'ZWToolKit/ZWCollectionView', :path => '../'
 

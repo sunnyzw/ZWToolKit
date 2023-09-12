@@ -1,6 +1,6 @@
 {
   "name": "ZWToolKit",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "summary": "常用工具集合库",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/sunnyzw/ZWToolKit",
@@ -13,13 +13,20 @@
   },
   "source": {
     "git": "https://github.com/sunnyzw/ZWToolKit.git",
-    "tag": "0.1.4"
+    "tag": "0.2.0"
   },
   "source_files": "ZWToolKit/Classes/**/*",
   "platforms": {
     "ios": "10.0"
   },
+  "pod_target_xcconfig": {
+    "VALID_ARCHS": "x86_64 armv7 arm64"
+  },
   "subspecs": [
+    {
+      "name": "ZWNetworking",
+      "source_files": "ZWToolKit/Classes/ZWNetworking/**/*"
+    },
     {
       "name": "ZWProgressHUD",
       "source_files": "ZWToolKit/Classes/ZWProgressHUD/**/*",
@@ -33,14 +40,6 @@
 
         ]
       }
-    },
-    {
-      "name": "ZWLinkView",
-      "source_files": [
-        "ZWToolKit/Classes/ZWCommon/**/*",
-        "ZWToolKit/Classes/Extensions/NSString/**/*",
-        "ZWToolKit/Classes/ZWLinkView/**/*"
-      ]
     },
     {
       "name": "ZWImageView",
@@ -68,6 +67,14 @@
         "ZWToolKit/Classes/ZWCommon/**/*",
         "ZWToolKit/Classes/Extensions/UIColor/**/*",
         "ZWToolKit/Classes/ZWCollectionView/**/*"
+      ]
+    },
+    {
+      "name": "ZWLinkView",
+      "source_files": [
+        "ZWToolKit/Classes/ZWCommon/**/*",
+        "ZWToolKit/Classes/Extensions/NSString/**/*",
+        "ZWToolKit/Classes/ZWLinkView/**/*"
       ]
     }
   ]

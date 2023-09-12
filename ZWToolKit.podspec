@@ -29,7 +29,13 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
 
-  # ZWProgressHUD, 二次封装MBProgressHUD, 便于使用
+  # ZWNetworking, 二次封装AFNetworking
+  s.subspec 'ZWNetworking' do |cs|
+    cs.source_files =
+      'ZWToolKit/Classes/ZWNetworking/**/*'
+  end
+  
+  # ZWProgressHUD, 二次封装MBProgressHUD
   s.subspec 'ZWProgressHUD' do |cs|
     cs.source_files = 'ZWToolKit/Classes/ZWProgressHUD/**/*'
     cs.resource_bundles = {
@@ -38,15 +44,7 @@ TODO: Add long description of the pod here.
     cs.dependency 'MBProgressHUD'
   end
   
-  # ZWLinkView, 部分文字可点击的文本
-  s.subspec 'ZWLinkView' do |cs|
-    cs.source_files =
-      'ZWToolKit/Classes/ZWCommon/**/*',
-      'ZWToolKit/Classes/Extensions/NSString/**/*',
-      'ZWToolKit/Classes/ZWLinkView/**/*'
-  end
-  
-  # ZWImageView, 二次封装SDWebImage, 便于维护
+  # ZWImageView, 二次封装SDWebImage
   s.subspec 'ZWImageView' do |cs|
     cs.source_files = 'ZWToolKit/Classes/ZWImageView/**/*'
     cs.dependency 'SDWebImage', '~> 5.0'
@@ -67,6 +65,14 @@ TODO: Add long description of the pod here.
       'ZWToolKit/Classes/ZWCommon/**/*',
       'ZWToolKit/Classes/Extensions/UIColor/**/*',
       'ZWToolKit/Classes/ZWCollectionView/**/*'
+  end
+  
+  # ZWLinkView, 部分文字可点击的文本
+  s.subspec 'ZWLinkView' do |cs|
+    cs.source_files =
+      'ZWToolKit/Classes/ZWCommon/**/*',
+      'ZWToolKit/Classes/Extensions/NSString/**/*',
+      'ZWToolKit/Classes/ZWLinkView/**/*'
   end
   
 end
